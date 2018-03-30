@@ -1,0 +1,249 @@
+html{
+  font-family: helvetica;
+  font-size: 18px;
+  margin:0;
+}
+p{
+  line-height: 1.4;
+}
+body{
+  margin:0;
+}
+.banner{
+  height:31rem;
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+  width:100%;
+}
+.container{
+  max-width:960px;
+  margin:0 auto;
+}
+.headbanner{
+  position:relative;
+  top: 1rem;
+  width:100%;
+  background-color: cadetblue;
+  padding:1rem 0;
+  display: flex;
+  align-items: center;
+}
+.headbanner img{
+  height:1.5rem;
+  width:auto;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+.headbanner p{
+  font-size: 1rem;
+  color:white;
+  flex-grow: 1;
+}
+.nav li{
+  font-size: 1rem;
+  color:white;
+  margin:0;
+}
+.nav{
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right:2rem;
+}
+.navmiddle{
+  padding:0 2rem;
+}
+.titlebox{
+  background-color: white;
+  padding:1.5rem 5rem;
+  float:right;
+  position: relative;
+  top:10rem;
+  left:2rem;
+}
+.titlebox h1{
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+.content{
+  width:100%;
+}
+.process{
+  display: flex;
+  justify-content: center;
+}
+.processbox{
+  margin: 3rem;
+  height:8rem;
+  width:5rem;
+  display:flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: center;
+}
+.processimage{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.processimage .paper{
+  width:3.5rem;
+  height:auto;
+}
+.processbox p{
+  text-align: center;
+
+}
+.processimage .rulertruck{
+  width:5rem;
+  height:auto;
+}
+
+.secondrowtitlebox h2{
+  font-weight: bold;
+  font-size: 1rem;
+  padding:0.5rem 1.25rem;
+  color:white;
+  width:10rem;
+  background-color: cadetblue;
+}
+.secondrowcontent{
+  margin-top: 1rem;
+}
+.secondrowitem{
+  width:35%;
+  margin:0 2.5%;
+}
+.secondrow{
+  display: flex;
+  justify-content: center;
+}
+.footer{
+  background-color: azure;
+  margin-top: 5rem;
+}
+.footercontent{
+  padding:4rem;
+  display:flex;
+}
+.footer img{
+  height:1.5rem;
+  margin-right: 1rem;
+}
+.menu{
+  display:none;
+}
+
+@media only screen and (max-width:1024px){
+  .container{
+    width:100%;
+    max-width:1024px;
+  }
+  .headbanner{
+    position:static;
+
+  }
+  .banner{
+    height:22rem;
+  }
+  .titlebox{
+    float:right;
+    display: inline-block;
+    position: relative;
+    padding:0.75rem 4rem;
+    top:5rem;
+    left:-2rem;
+
+  }
+  .titlebox h1{
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width:520px){
+  .container{
+    width:100%;
+    max-width:520px;
+  }
+  .headbanner{
+    position:static;
+
+  }
+  .menu{
+    display: block;
+  }
+  .services, .navmiddle, .contact{
+    display: none;
+  }
+  .headbanner p{
+    visibility: hidden;
+  }
+
+  .banner{
+    height:17rem;
+  }
+  .titlebox{
+    float:none;
+    background-size: cover;
+    display: block;
+    position: relative;
+    padding:1rem 0;
+    top:9rem;
+    left:0rem;
+    text-align: center;
+
+  }
+  .titlebox h1{
+    font-size: 1rem;
+  }
+  .banner{
+    background-position: 20%;
+  }
+  .process{
+    flex-flow: column;
+    align-items: center;
+  }
+  .processbox{
+    margin:0.77rem;
+  align-content: space-around;
+  }
+  .processbox p{
+  font-size: 0.77rem;
+  }
+  .process{
+    margin: 3rem 0;
+  }
+  .secondrow{
+    flex-flow:column;
+  }
+  .secondrowtitlebox h2{
+    padding:0.5rem 0;
+    width:100%;
+  }
+  .secondrowitem{
+    margin:0;
+    width:100%;
+  }
+  .secondrowtitlebox{
+    text-align: center;
+  }
+  .secondrowcontent p{
+    font-size: 0.77rem;
+  }
+  .secondrowcontent{
+    margin-bottom:4rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .footercontent p{
+    display: none;
+
+  }
+  .footercontent{
+    justify-content: center;
+  }
+  .footercontent img{
+    margin-right:0rem;
+  }
+}
